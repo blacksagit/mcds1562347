@@ -1,0 +1,55 @@
+html {
+	background: -webkit-linear-gradient(#ccc, #000);
+	background: -moz-linear-gradient(#ccc, #000);
+	background: -ms-linear-gradient(#ccc, #000);
+	height: 100vh;
+}
+
+body {
+	font: 16px Arial;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+	margin: 40px auto;
+}
+
+h2 {
+	font-weight: bold;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	width: 400px;
+	margin: 20px auto 0;
+	padding: 20px;
+}
+
+section {
+	background-color: #fff;
+	margin: 0 auto 20px;
+	padding: 20px;
+	width: 400px;
+}
+
+section div {
+	border: 1px solid #666;
+	padding: 10px;
+}
+
+section div.example {
+	background-color: #666;
+	color: #fff;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+section div.example:hover {
+	cursor: pointer;
+	transform: scale(1.5);
+}
+
+section div.result {
+	font-size: 0.8em;
+}

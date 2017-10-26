@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anidar Elementos ( > )</title>
+	<link rel="stylesheet" href="css/emmet_examples.css">
+	
+</head>
+<body>
+	<h1>Emmet Examples</h1>
+
+	<!-- -->
+	<h2>Anidar Elementos ( > )</h2>
+	<section>
+		<div class="example">
+			ul>li>a>img
+		</div>
+		<div class="result">
+			<pre>
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=""&gt;
+				&lt;img src="" alt=""&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+			</pre>
+		</div>
+	</section>
+
+	<!-- -->
+	<h2>Elementos Hermanos ( + )</h2>
+	<section>
+		<div class="example">
+			section+header+nav
+		</div>
+		<div class="result">
+			<pre>
+	&lt;section&gt;&lt;/section&gt;
+	&lt;header&gt;&lt;/header&gt;
+	&lt;nav&gt;&lt;/nav&gt;
+			</pre>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.result').hide();
+			$('section').on('click', '.example', function(event) {
+				event.preventDefault();
+				$(this).next('.result').slideToggle('slow');
+			});
+		});
+	</script>
+</body>
+</html>
