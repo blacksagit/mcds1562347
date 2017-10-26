@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anidar Elementos ( > )</title>
+	<link rel="stylesheet" href="css/emmet_examples.css">
+	
+</head>
+<body>
+	<h1>Emmet Examples</h1>
+	<div class="container">
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Anidar Elementos ( > )</h2>
+				<section>
+					<div class="example">
+						ul>li>a>img
+					</div>
+					<div class="result">
+						<pre>
+&lt;ul&gt;
+	&lt;li&gt;
+		&lt;a href=""&gt;
+			&lt;img src="" alt=""&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Elementos Hermanos ( + )</h2>
+				<section>
+					<div class="example">
+						section+header+nav
+					</div>
+					<div class="result">
+						<pre>
+&lt;section&gt;&lt;/section&gt;
+&lt;header&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;/nav&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Repetir Elementos ( * )</h2>
+				<section>
+					<div class="example">
+						ul>li*3
+					</div>
+					<div class="result">
+						<pre>
+&lt;ul&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Atributo Clase ( . )</h2>
+				<section>
+					<div class="example">
+						div.contenedor - .contenedor2
+					</div>
+					<div class="result">
+						<pre>
+&lt;div class="contenedor"&gt;&lt;/div&gt;
+
+&lt;div class="contenedor2"&gt;&lt;/div&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Multiples Clases ( . . . )</h2>
+				<section>
+					<div class="example">
+						div.clase1.clase2.clasen
+					</div>
+					<div class="result">
+						<pre>
+&lt;div class="clase1 clase2 clasen"&gt;&lt;/div&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Atributo Identificador ( # )</h2>
+				<section>
+					<div class="example">
+						nav#menu
+					</div>
+					<div class="result">
+						<pre>
+&lt;nav id="menu"&gt;&lt;/nav&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Adicionar Texto ( { } )</h2>
+				<section>
+					<div class="example">
+						div{Lorem Ipsum Dolor} - a{Click Aquí}
+					</div>
+					<div class="result">
+						<pre>
+&lt;div&gt;Lorem Ipsum Dolor&lt;/div&gt;
+
+&lt;a href=“”&gt;Lorem Ipsum Dolor&lt;/a
+&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Personalizar Atributos ( [ ] )</h2>
+				<section>
+					<div class="example">
+						a[href=www.google.com]
+					</div>
+					<div class="result">
+						<pre>
+&lt;a href="www.google.com"&gt;&lt;/a&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Numeros Consecutivos ( # )</h2>
+				<section>
+					<div class="example">
+						ul>li.num$*3 - section>article.sec$$$*3
+					</div>
+					<div class="result">
+						<pre>
+&lt;ul&gt;
+	&lt;li class="num1"&gt;&lt;/li&gt;
+	&lt;li class="num2"&gt;&lt;/li&gt;
+	&lt;li class="num3"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+	&lt;li class="num3"&gt;&lt;/li&gt;
+	&lt;li class="num2"&gt;&lt;/li&gt;
+	&lt;li class="num1"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+	&lt;li class="num3"&gt;&lt;/li&gt;
+	&lt;li class="num4"&gt;&lt;/li&gt;
+	&lt;li class="num5"&gt;&lt;/li&gt;
+	&lt;li class="num6"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;section&gt;
+	&lt;article&gt;
+		&lt;div&gt;&lt;/div&gt;
+	&lt;/article&gt;
+	&lt;p&gt;&lt;/p&gt;
+&lt;/section&gt;
+						</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.result').hide();
+			$('section').on('click', '.example', function(event) {
+				event.preventDefault();
+				$(this).next('.result').slideToggle('slow');
+			});
+		});
+	</script>
+</body>
+</html>

@@ -2,11 +2,12 @@ html {
 	background: -webkit-linear-gradient(#ccc, #000);
 	background: -moz-linear-gradient(#ccc, #000);
 	background: -ms-linear-gradient(#ccc, #000);
-	height: 100vh;
+	overflow-y: scroll;
 }
 
 body {
 	font: 16px Arial;
+	min-height: 100%;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h2 {
 	text-align: center;
 	background-color: #333;
 	color: #fff;
-	width: 400px;
+	width: 350px;
 	margin: 20px auto 0;
 	padding: 20px;
 }
@@ -30,7 +31,7 @@ section {
 	background-color: #fff;
 	margin: 0 auto 20px;
 	padding: 20px;
-	width: 400px;
+	width: 350px;
 }
 
 section div {
@@ -52,4 +53,18 @@ section div.example:hover {
 
 section div.result {
 	font-size: 0.8em;
+}
+
+div.container {
+	width: 100%;
+}
+
+div.row {
+	display: table;
+  	margin: 0 auto;
+}
+
+div.wrapper-example {
+	float: left;
+	margin: 10px;
 }
