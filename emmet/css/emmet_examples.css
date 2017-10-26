@@ -27,6 +27,10 @@ h2 {
 	padding: 20px;
 }
 
+ul {
+	padding-left: 20px;
+}
+
 section {
 	background-color: #fff;
 	margin: 0 auto 20px;
@@ -48,11 +52,27 @@ section div.example {
 
 section div.example:hover {
 	cursor: pointer;
-	transform: scale(1.5);
+	transform: scale(1.2);
+}
+
+section div.example {
+	margin-top: 10px;
 }
 
 section div.result {
 	font-size: 0.8em;
+}
+
+section div.result pre {
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+img.logo-title {
+	vertical-align: middle;
 }
 
 div.container {
