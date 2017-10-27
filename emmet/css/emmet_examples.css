@@ -89,6 +89,11 @@ div.wrapper-example {
 	margin: 10px;
 }
 
-div.reto h2, div.reto section {
-	width: 960px
+div.wrapper-example.reto h2 {
+	width: 960px;
+}
+
+div.wrapper-example.reto section {
+	font-size: 0.9em;
+	width: 960px;
 }
