@@ -88,3 +88,7 @@ div.wrapper-example {
 	float: left;
 	margin: 10px;
 }
+
+div.reto h2, div.reto section {
+	width: 960px
+}
